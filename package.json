@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/clifhodges13/node-practice/issues"
   },
-  "homepage": "https://github.com/clifhodges13/node-practice#readme"
+  "homepage": "https://github.com/clifhodges13/node-practice#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0"
+  }
 }
