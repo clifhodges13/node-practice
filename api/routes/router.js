@@ -23,6 +23,7 @@ router.get('/todos', async (req, res, next) => {
         if(!todos) {
             return res.status(404).json({ message: 'Todos not found.' })
         }
+        
         res.status(200).json({todos})
 
     } catch (err) {
