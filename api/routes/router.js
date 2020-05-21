@@ -35,7 +35,8 @@ router.get('/todos', async (req, res, next) => {
 // POST a todo
 router.post('/todos', async (req, res, next) => {
     try {
-        await DB('todos').insert({ todo: req.params.todo })
+        await DB('todos').insert(req.body)
+        res.status(201).json({ message: 'Todo added to the DB!' })
     } catch(err) {
         console.log(err)
     }
